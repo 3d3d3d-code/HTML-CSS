@@ -1,0 +1,23 @@
+
+
+.fond{
+    
+    
+background-image: url(../Tp_Vignoble/TP_Vignoble_HTML_CSS/images/bg_motif.gif) ;
+
+border: 2px solid black;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 300px;
+
+
+}
+
+.foot{
+
+background-image: url(../Tp_Vignoble/TP_Vignoble_HTML_CSS/images/footer-bg.jpg);
+width: 100%;
+height: 100px;
+
+}
