@@ -1,78 +1,163 @@
-
-*{
-margin: 0;
-padding: 0;
-font-size: 62,5;
- 
-
+@font-face {
+    font-family: "Channel";
+    src: url("../FONTS/channel-webfont.ttf")
 }
 
-html{
-      
-font-size: 62,5%;
-
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
 }
 
-body{
+body {
+    background-color: crimson;
+}
 
-    background-color: indianred}
-
-header{
-
-    font-size:2rem ;
+header {
+    position: fixed; 
+    font-size: 2rem;
     width: 100vw;
-    height: 10vh;
-    background-color:rgb(0,0,0) ;
-    border-bottom: 0,2rem solid cornsilk;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 0.2rem solid cornsilk;
     display: flex;
     flex-direction: row;
-
-nav{
-background-color: darkgreen;
-width: 80vw;
-height: 100%;
-display: flex; 
-justify-content: flex-end;
+    font-family: "Channel";
 }
 
-#menu-ul{
 
+#logo-div {
+    width: 20vw;
+}
+
+#logo-img {
+    position: relative;
+    top: 3.7rem;
+    left: 10vh;
+}
+
+nav {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+#menu-ul {
     width: 100%;
     height: 100%;
-    background-color: darkorange
-
-
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    
 }
 
-
-
-#logo-div{
- 
-    background-color:darkgreen ;
-    width:20vw;
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+  
 }
 
-
-li{
-    background-color: yellow;
-list-style: none;
-display: inline-block;
-
-}
-
-a{background-color: darkslateblue;
+a {
     display: inline-block;
     text-decoration: none;
+    padding: 1rem 0;
     color: cornsilk;
-
- 
-}
-.sub-menu{
-
-display: none;
 }
 
+.sub-menu {
+    display: none;
+}
+
+
+img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    overflow: hidden;
+    }
+h1{
+background-color: gold;
+height: 6%;
+width: 96%;
+position: relative;
+left: 2%;
+text-align: center;
+
+
+}
+
+main{
+margin: 0 15%;
+z-index: 1;
+position: absolute;
+top: 8vw;
+min-height: 100vh;
+width: 70%;
+
+}
+
+#carousel-section{
+
+background-color: deeppink;
+width: 100%;
+height: 60vh;
+
+}
+.frame{
+background-color: rgb(13, 230, 49);
+height: 90%;
+
+
+}
+
+.carousel{
+
+    background-color: rgb(230, 227, 239);
+    height: 94%;
+    width: 96%;
+    position: relative;
+    top: 5%;
+    left: 2%;
+}
+.element>img{
+width: 100%;
+height: 100%;
+
+
+}
+.changehidden, .content,.element{
+
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slidy{
+
+
+0%{left: 0%;}
+20%{left: 0%;}
+25%{left: -100%;}
+
+
+}
+
+.carousel {
+    display: flex;
+    overflow-y: scroll;
+    
+    padding: 1rem 0;
+}
+.carousel{
+    margin-left: 1rem;
+}
 
 
 
