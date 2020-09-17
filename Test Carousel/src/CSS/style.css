@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "Channel";
+    src: url("../FONTS/channel-webfont.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
+}
+
+body {
+    background-color: crimson;
+}
+
+header {
+    position: fixed; 
+    font-size: 2rem;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 0.2rem solid cornsilk;
+    display: flex;
+    flex-direction: row;
+    font-family: "Channel";
+}
+
+
+#logo-div {
+    width: 20vw;
+}
+
+#logo-img {
+    position: relative;
+    top: 3.7rem;
+    left: 10vh;
+}
+
+nav {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+#menu-ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: cornsilk;
+}
+
+.sub-menu {
+    display: none;
+}
+
+
+img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    overflow: hidden;
+    }
+h1{
+background-color: gold;
+height: 6%;
+width: 96%;
+position: relative;
+left: 2%;
+text-align: center;
+
+
+}
+
+main{
+margin: 0 15%;
+z-index: 1;
+position: absolute;
+top: 8vw;
+min-height: 100vh;
+width: 70%;
+
+}
+
+#carousel-section{
+
+background-color: deeppink;
+width: 100%;
+height: 60vh;
+
+}
+.frame{
+background-color: rgb(13, 230, 49);
+height: 90%;
+
+
+}
+
+.carousel{
+
+    background-color: rgb(230, 227, 239);
+    height: 94%;
+    width: 96%;
+    position: relative;
+    top: 5%;
+    left: 2%;
+}
+.element>img{
+width: 100%;
+height: 100%;
+
+
+}
+.changehidden, .content,.element{
+
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slidy{
+
+
+0%{left: 0%;}
+20%{left: 0%;}
+25%{left: -100%;}
+
+
+}
+
+
+.carousel{
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+ 
+
+
+body {
+    margin: 0;
+}
+
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+}
+
+#slides figure {
+    display: inline-block;
+    width: 100vw;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+@keyframes slide {
+    0%, 20%, 100% {
+        left: 0; /*1ère image*/
+    }
+    35%, 50% {
+        left: -100vw; /*2ème image*/
+    }
+    70%, 95% {
+        left: -200vw; /*3ème image*/
+    }
+}
+
+
+#slides {
+    /*... Code précédent ...*/
+    /*CSS3 keyframes animation*/
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#slides {
+    animation: slide 20s infinite ease-in-out forwards;
+}
+ 
+
+
+
+#slides:hover {
+    animation-play-state: paused; /* Mise en pause de l'animation */
+}
+
+
+<div id="slider">
+    <input type="radio" id="show_slide1" name="slider_commands">
+    <input type="radio" id="show_slide2" name="slider_commands">
+    <input type="radio" id="show_slide3" name="slider_commands">
+        
+    <div id="slides">
+        <!-- Suite du code -->
+    </div>
+    <nav>
+        <ul class="dots_commands">
+            <li><label for="show_slide1">Slide 1</label></li>
+            <li><label for="show_slide2">Slide 2</label></li>
+            <li><label for="show_slide3">Slide 3</label></li>
+        </ul>
+    </nav>
+</div>
+Ces trois boutons radios vont nous permettre de switcher entre les différentes images. Pour que le rendu soit plus esthétique, ils seront cachés et nous utiliserons les labels, que nous allons styliser un peu :
+
+.dots_commands  {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+
+.dots_commands li {
+    display: inline;
+    padding: 0; 
+    margin: 0;
+}
+
+.dots_commands label {
+    position: relative;
+    display: inline-block;
+    height:8px; width: 8px;
+    margin: 0 5px;
+    text-indent: -9999px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+ 
+
+A présent, occupons-nous de leur fonctionnement : 
+
+input[type="radio"]#show_slide1:checked ~ nav .dots_commands li:nth-of-type(1) label,
+input[type="radio"]#show_slide2:checked ~ nav .dots_commands li:nth-of-type(2) label,
+input[type="radio"]#show_slide3:checked ~ nav .dots_commands li:nth-of-type(3) label {
+    outline: none;
+    background: dodgerblue;
+}
+
+input[type="radio"]#show_slide1:checked ~ div#slides {
+    animation: none;
+    left: 0;
+}
+
+input[type="radio"]#show_slide2:checked ~ div#slides {
+    animation: none;
+    left: -100vw;
+}
+
+input[type="radio"]#show_slide3:checked ~ div#slides {
+    animation: none;
+    left: -200vw;
+}
+ 
+
+
+
+<div id="slider">
+    <!-- Nos autres boutons radio -->
+    <input type="radio" id="play_slider" name="slider_commands">
+
+    <div id="slides">
+        <!-- Les slides -->
+    </div>
+    <nav>
+        <ul class="dots_commands">
+            <!-- Code précédents -->
+        </ul>
+        <label for="play_slider" aria-label="Play" id="play" title="Play">Play</label>
+    </nav>
+</div>
+
+
+
+
+#play {
+    position: absolute;
+    cursor: pointer;
+    bottom: 2em;
+    right: 2em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid rgba(255,255,255,0.7);
+    display: none;
+    text-indent: -9999px;
+}
+
+
+input[type="radio"]:not(:nth-last-of-type(1)):checked ~ nav label#play {
+    display: block;
+}
+ 
+
+
+
+input[type="radio"]#play:checked ~ div#slides {
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+ 
+
+
+
+
+
