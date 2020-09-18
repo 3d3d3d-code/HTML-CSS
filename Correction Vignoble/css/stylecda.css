@@ -1,0 +1,80 @@
+                @font-face {
+                    font-family: 'channel-regular';
+                    src: url('../fonts/channel-webfont.woff');
+                    src: url('../fonts/channel-webfont.svg#channel-regular')format('svg');
+                    src: url('../fonts/channel-webfont.ttf')format('truetype');
+                }
+
+                body {
+                    background-image: url("../images/bg_motif.gif");
+                    background-repeat: repeat;
+                    font-family: "Satisfy";
+                }
+
+                header {
+                    position: fixed;
+                    width: 100%;
+                    height: 80px;
+                    top: 0px;
+                    border-bottom: 2px solid white;
+                    background-image: url("../images/header.png");
+                    background-repeat: repeat;
+                    font-family: 'arial', sans serif;
+                }
+
+                header nav>ul {
+                    float: right;
+                    padding-top: 25px;
+                    padding-right: 60px;
+                }
+
+                header nav>ul>li {
+                    display: inline;
+                    position: relative;
+                    color: #C7C7C7;
+                    padding-left: 50px;
+                    padding-bottom: 20px;
+                    font-family: "channel-regular";
+                }
+
+                header nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                header nav ul li ul {
+                    display: none;
+                    position: absolute;
+                    top: 50px;
+                    left: 100px;
+                }
+
+                header nav ul li:hover ul {
+                    display: block;
+                }
+
+                header nav ul ul li {
+                    border: 1px solid #fff;
+                    padding: 20px 5px 20px 5px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+
+                footer nav>ul>li {
+                    display: inline;
+                 
+                  
+                    padding-left: 200px;
+                    padding-bottom: 15px;
+                    font-family: "channel-regular";
+                  text-decoration-color: #fff;
+                }
+
+                footer img {
+                    position: relative;left: 80%;
+        
+                }
+
+                footer nav>ul> li{
+
+
+                }
