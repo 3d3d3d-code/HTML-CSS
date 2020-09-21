@@ -61,20 +61,33 @@
 
                 footer nav>ul>li {
                     display: inline;
-                 
-                  
                     padding-left: 200px;
                     padding-bottom: 15px;
                     font-family: "channel-regular";
-                  text-decoration-color: #fff;
+                    text-decoration-color: #fff;
                 }
 
                 footer img {
-                    position: relative;left: 80%;
-        
+                    position: relative;
+                    left: 80%;
                 }
 
-                footer nav>ul> li{
-
-
+                article figure img {
+                    width: calc(100px * 7);
+                    margin-left: 30%;
                 }
+
+                .slides {
+                    width: calc(300px * 7);
+                    height: calc(10px * 7);
+                }
+
+                .slide {
+                    
+                  
+                  
+                    
+                
+                }
+
+              

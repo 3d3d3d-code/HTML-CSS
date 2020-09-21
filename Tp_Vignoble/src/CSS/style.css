@@ -151,7 +151,7 @@ height: 100%;
 
 .carousel {
     display: flex;
-    overflow-y: scroll;
+    overflow-x: scroll;
     
     padding: 1rem 0;
 }
