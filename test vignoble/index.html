@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="vin.js">
     <title>Menu Anime</title>
 </head>
 
@@ -31,12 +32,31 @@
     </header>
 
     <section>
+        <span id="sl_play" class="sl_command"></span>
+        <span id="sl_pause" class="sl_command"></span>
+
+
         <article>
-            <img src="images/raisin.jpg" id="main_img">
-                                              <img src="images/slides/image1.jpg"  id="main_img">
-                                                                        <img src="images/slides/image3.jpg" id="main_img">
+            <div class="container">
+
+                <div class="slider">
+                    <div><img src="images/slides/image1.jpg" id="main_img">
+                        <img  class="active" src="images/slides/image2.jpg" id="main_img">
+                        <img src="images/slides/image3.jpg" id="main_img">
+                        <img src="images/slides/image4.jpg" id="main_img">
+                        <img src="images/slides/image5.jpg" id="main_img">
+                        <img src="images/slides/image6.jpg" id="main_img">
+                        <img src="images/slides/image7.jpg" id="main_img">
+                    </div>
+                    <div class="cont-btn">
+                        <div class="btn-nav left"></div>
+                    </div>
+                </div>
+            </div>
+
             <p id="txt1">Sequi nescique quisququi dolertalorem</p>
             <hr style="width: 880px;">
+            <span id="timeline"></span>
         </article>
 
         <article>
@@ -117,13 +137,12 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <img src="images/img_footer.png"
-        </footer>
+            <img src="images/img_footer.png" </footer>
 
 
 
     </section>
-    
+
 </body>
 
 </html>

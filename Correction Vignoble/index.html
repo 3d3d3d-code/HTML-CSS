@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <meta charset="utf-8" />
     <title>page du vignoble</title>
     <!--Elements <meta />  -->
@@ -14,6 +15,10 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script|Satisfy' rel='stylesheet' type='text/css'>
     <link href="css/stylecda.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -25,7 +30,9 @@
 <!--Insertion d'un commentaire-->
 
 <body>
+
     <header>
+
         <nav>
             <ul>
                 <li><a href="">Accueil</a>
@@ -56,52 +63,58 @@
                     </ul>
                 </li>
                 <li><a href="">Contact</a>
+                    <ul>
+                        <a href="">la route </a>
+                    </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <div  id="container" >
+    <div id="container">
         <img src="images/logo.png" alt="logo" width="87px" height="299px">
-        <section id="slider">
-            <article class="slides">
-                <figure class="slide">
-                    <img src="images/raisin.jpg" alt="raisin">
-                    <figcaption>Le raisin blanc</figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="./images/slides/image1.jpg" alt="image1">
-                    <figcaption>image1</figcaption>
-                </figure >
-                <figure class="slide">
-                    <img src="./images/slides/image2.jpg" alt="image2">
-                    <figcaption>image2</figcaption>
-                </figure>
-                <figure class="slide"> 
-                    <img src="./images/slides/image3.jpg" alt="image3">
-                    <figcaption>image3</figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="./images/slides/image4.jpg" alt="image4">
-                    <figcaption>image4</figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="./images/slides/image5.jpg" alt="image5">
-                    <figcaption>image5</figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="./images/slides/image6.jpg" alt="image6">
-                    <figcaption>image6</figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="./images/slides/image7.jpg" alt="image7">
-                    <figcaption>image7</figcaption>
-                </figure>
+
+        <section class="slider">
+            <div class="glisse">
+                <article class="slides">
+                    <figure class="slide">
+                        <img src="images/raisin.jpg" alt="raisin">
+                        <figcaption>Le raisin blanc</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image1.jpg" alt="image1">
+                        <figcaption>image1</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image2.jpg" alt="image2">
+                        <figcaption>image2</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image3.jpg" alt="image3">
+                        <figcaption>image3</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image4.jpg" alt="image4">
+                        <figcaption>image4</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image5.jpg" alt="image5">
+                        <figcaption>image5</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image6.jpg" alt="image6">
+                        <figcaption>image6</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/slides/image7.jpg" alt="image7">
+                        <figcaption>image7</figcaption>
+                    </figure>
+            </div>
             </article>
         </section>
         <hr />
 
-        <section>
-            <article class="bloc">
+        <section class="bloc">
+            <article>
                 <img src="images/icon-1.png" alt="bouteille">
                 <h1>La cave</h1>
                 <p>Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video
@@ -110,7 +123,7 @@
                 <a href="#" target="_self">Lire la suite</a>
             </article>
 
-            <article class="bloc">
+            <article>
                 <img src="images/icon-2.png" alt="verre">
                 <h1>Le Vigneron</h1>
                 <p>En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit,
@@ -120,7 +133,7 @@
                 <a href="#" target="_self">Lire la suite</a>
             </article>
 
-            <article class="bloc">
+            <article>
                 <img src="images/icon-3.png" alt="bouteille2">
                 <h1>Les Produits</h1>
                 <p>En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit,
