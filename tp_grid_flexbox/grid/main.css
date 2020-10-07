@@ -1,0 +1,60 @@
+*{
+
+    margin: 0;
+    padding:0;
+}
+div{
+
+    background-color: rgb(201, 197, 197);
+    padding-top: 25px;
+  
+}
+
+
+header{
+
+    background-color:rgb(221, 87, 87);
+    padding: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.grille{
+
+
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+padding-left: 300px;
+
+  
+    
+  
+   
+ }
+
+article{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-row:2 ;
+
+}
+
+.titrage{
+color: rgb(221, 87, 87);
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.taille{
+    width:190px;
+height:250px;
+    }
+    .espace{
+
+
+    
+    }
+   
+
+
