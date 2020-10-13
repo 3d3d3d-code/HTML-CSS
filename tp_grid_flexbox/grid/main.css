@@ -21,3 +21,8 @@ h1 {
     color: white;
     font-size: 50px;
 }
+
+div:hover{
+    opacity: 0.8;
+}
+

@@ -1,0 +1,29 @@
+#conteneur {
+    display: flex;
+    border: 2px solid #444;
+    flex-direction: row-reverse;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ 
+   
+}
+
+.element {
+    width: 150px;
+    height: 100px;
+}
+
+.element:nth-child(1) {
+    background-color: orange;
+    flex: 1;
+}
+
+.element:nth-child(2) {
+    background-color: blue;
+  flex: 2;
+}
+
+.element:nth-child(3) {
+    background-color: #ad6;
+    flex: 3;
+} 
