@@ -11,11 +11,17 @@
     background: blanchedalmond;
     margin: 10px;
     min-height: 90px;
+       align-content: center;
 }
 
 .header {
     text-align: center;
     background-color: lightcoral;
+    padding-top: 5%;
 
   
 }
+ 
+
+
+
