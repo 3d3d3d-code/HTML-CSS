@@ -6,6 +6,7 @@
 body{
 
     background-color: #BBCCFF;
+    order: 2;
    
                           
 }
@@ -14,15 +15,16 @@ body{
 .grid{
     display: grid;
     border: 1px solid red;
+    gap: 10px;
    
-    grid-template-columns:1fr 1fr 1fr 1fr 4fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr  4fr;
+    grid-template-rows:1fr 10fr 1fr ;
  
-    grid-template-areas: 'GRID 1 GRID 1 GRID 1 GRID 1 GRID 1 GRID 1 GRID 1 '; 
+    
 }
 
 header{
-
+order: 1;
 background-color: yellowgreen;
 
 }
@@ -41,18 +43,20 @@ background-color: tomato;
 .main{
 
     background-color: white;
+ row-gap: 10px;
 }
 
 section{
 
     padding:10px;
-column-gap: 3px;}
 
+}
 h1{
     background-color: violet;
     grid-area: GRID 1 ;
 }
 nav{
+    order: 1;
     background-color: thistle;
 }
 
@@ -64,5 +68,6 @@ aside{
     background-color: violet;
 }
 .foot{
+ order: 5;
     background-color: yellow;
 }
